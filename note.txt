@@ -1,0 +1,32 @@
+1-1.1 MIB check DUT FW version user enter IP
+[SNMP MIB]
+1-1.2 MIB check DUT FW version IP list
+1-2.1 MIB check FW , if FW diffrent will upgrade FW
+1-2.2 MIB check FW , if FW diffrent will upgrade FW using function
+1-2.3 MIB check FW same or not
+[PING]
+2-1 ping to check interface is up or down
+2-2 ping and export log 
+
+[STABILITY]
+###############NOTE:##############################
+3-1.1 and 3.1.2 is actuallt the same, but .2 is version2, it added the date. 
+The reason of this is beacuse my V1 file is lost so i rewrite it, but later v1 is finded
+############################################################
+3-1.1 MIB reset CM and ping to check online loop [stability]  
+3-1.2_stability_walk_snmp_reboot_with_pingV2 [stability]  
+3-2 MIB walk CM and ping loop-stability loop [stability]  
+
+[Telnet]
+4-1.1 Telnet to CMTS to gfet MAC v4 IP
+4-1.2 Telnet to CMTS to gfet MAC v6 IP
+4-2.1 telnet_CMTS_input_mac_IPv4_python3
+4-2.2 telnet_CMTS_input_mac_IPv4_python2
+4-2.3 telnet_CMTS_IPv4_python3-MAC-convert(will import telnet_MAC_TYPE for user to type MAC)
+4-3.1 telnet_CMTS_input_mac_IPv6_python3
+4-3.2 telnet_CMTS_input_mac_IPv6_python3
+
+[Format Style]
+5-1 Add MAC to text file and convert to CMTS format
+5-2 Input MAC and convert to mac format and cmts format
+5-3 mac_address_cmts_format 
