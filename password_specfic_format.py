@@ -2,7 +2,7 @@
 This is a script to convert MAC Address format
 CGNV5_TFC format: #BBAADD@CCFFEE 
 """
-
+import os, sys
 def split_mac(x):
      mac_Add=x.split(":")
      return mac_Add
@@ -33,9 +33,19 @@ def split_convert(MAC):
     MAC_ADD=MAC.split(':')
     str=""
     return str.join(MAC_ADD)
+while True:
+    try: 
+        mac_Add= input("please enter your mac address: ").upper()
+        print ("MAC Address:    ", split_convert(mac_Add))
+        print ("TFC MAC Address:", TFC_MAC(mac_Add))
+        print("="*35)
+        os.system("pause")
+    except KeyboardInterrupt:
+        
+        print("\n========Exit Program=========")
+        os.system("pause")
+        sys.exit(0)
 
-mac_Add= input("please enter your mac address: ").upper()
-print ("MAC Address:    ", split_convert(mac_Add))
-print ("TFC MAC Address:", TFC_MAC(mac_Add))
-
-
+        #you can also used os._exit(0)
+        #os._exit(0)
+    
