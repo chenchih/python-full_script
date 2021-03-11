@@ -33,13 +33,13 @@
  
 | File Name      | Description   |  Type  | Other File  |
 | --------   | -----:  | :----:  |:----:  |
-|4-1.1_telnet_cbr8_ipv4.py|||
-|4-1.2_telnet_cbr8_ipv6.py|||
-|4-2.1_telnet_CMTS_IPv4_python3.py|||
-|4-2.2_telnet_CMTS_IPv4_python2.py|||
-|4-2.3_telnet_CMTS_IPv4_python3-MAC-convert.py|||
-|4-3.1_telnet_CMTS_IPv6_python3.py|||
-|4-3.2_telnet_CMTS_IPv6_python2.py|||
+|4-1.1_telnet_cbr8_ipv4.py|check your DUT IPV4 from CMTS using telnet |telnet|NA     |
+|4-1.2_telnet_cbr8_ipv6.py|check your DUT IPV6 from CMTS using telnet|telnet|NA     |
+|4-2.1_telnet_CMTS_IPv4_python3.py|User Enter XXXXXXXXXXXX MAC address, and check your DUT IPV4 from CMTS using telnet-python3|telnet|NA     |
+|4-2.2_telnet_CMTS_IPv4_python2.py |User Enter XXXXXXXXXXXX MAC address, and check your DUT IPV4 from CMTS using telnet-Python2|telnet|NA     |
+|4-2.3_telnet_CMTS_IPv4_python3-MAC-convert.py|User Enter any format MAC address, and check your DUT IPV4 from CMTS using telnet-Python2|telnet|NA     |
+|4-3.1_telnet_CMTS_IPv6_python3.py|User Enter XXXXXXXXXXXX MAC address, and check your DUT IPV6 from CMTS using telnet-python3|telnet|NA     |
+|4-3.2_telnet_CMTS_IPv6_python2.py|User Enter XXXXXXXXXXXX MAC address, and check your DUT IPV6 from CMTS using telnet-python2|telnet|NA     |
 
 + Part6-7: Other
  
@@ -47,6 +47,6 @@
 | --------   | -----:  | :----:  |:----:  |
 |5-1_mac_cmts_text_file.py|||
 |5-2_macconvert_V2.py|||
-|5-3_CMTS_SCM_format.py|||
-|6-1.1read_and_write_file_for_DNS_List.py|||
-|6-1.2read_and_write_file_for_DNS_List_random_A_AAAA.py|||
+|5-3_CMTS_SCM_format.py | changed MAC to CMTS format  | read file |mac_cmts.txt     |NA|
+|6-1.1read_and_write_file_for_DNS_List.py|read text file and add A into the file|read file|data.txt|
+|6-1.2read_and_write_file_for_DNS_List_random_A_AAAA.py|read text file and random add  A or AAAA into the file|read file/random A or AAAA type|data.txt|
